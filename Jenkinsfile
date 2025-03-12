@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 script {
-                    sh 'g++ -o PES1UG22AM906-1 main.cpp'  // Compile C++ file
+                    sh 'g++ -o PES1UG22AM906 main.cpp'  // Compile C++ file
                 }
             }
         }
@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 script {
-                    sh './PES1UG22AM906-1'  // Run the compiled file
+                    sh './PES1UG22AM906'  // Run the compiled file
                 }
             }
         }
